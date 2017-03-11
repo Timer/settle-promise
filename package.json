@@ -1,6 +1,6 @@
 {
   "name": "settle-promise",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Like `Promise.all`, but when all `Promise`s are settled.",
   "main": "lib/index.js",
   "scripts": {
