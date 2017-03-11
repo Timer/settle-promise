@@ -1,6 +1,7 @@
 //@flow
 
-function settle(val: Iterable<Promise>): Promise {
+function settle(val: Array<Promise<*>> | Promise<*>): Promise<*> {
+  if (!Array.isArray(val)) val = [val];
   return Promise.all(
     val.map(p =>
       p
